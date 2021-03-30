@@ -45,13 +45,12 @@ public class ÁrbolBB extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         recorridos = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
+        buscar2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu6 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        Insertar = new javax.swing.JMenuItem();
-        Eliminar = new javax.swing.JMenuItem();
-        Buscar = new javax.swing.JMenuItem();
-        Cargar = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         InOrden = new javax.swing.JMenuItem();
         PreOrden = new javax.swing.JMenuItem();
@@ -88,12 +87,15 @@ public class ÁrbolBB extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(12, 23, 25));
 
         jLabel2.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhoselin\\Downloads\\ProyectoArboles(2) (2)\\ProyectoArboles(2)\\src\\iconos\\usuario.png")); // NOI18N
         jLabel2.setText("Nombre:");
 
         jLabel3.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhoselin\\Downloads\\ProyectoArboles(2) (2)\\ProyectoArboles(2)\\src\\iconos\\sig.png")); // NOI18N
         jLabel3.setText("Significado:");
 
         jLabel4.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhoselin\\Downloads\\ProyectoArboles(2) (2)\\ProyectoArboles(2)\\src\\iconos\\recorrido.png")); // NOI18N
         jLabel4.setText("Recorrido :");
 
         nombre.setBackground(new java.awt.Color(153, 153, 153));
@@ -122,95 +124,100 @@ public class ÁrbolBB extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(153, 153, 153));
         jLabel1.setText("SIGNIFICADO DE NOMBRES");
 
+        buscar2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhoselin\\Downloads\\ProyectoArboles(2) (2)\\ProyectoArboles(2)\\src\\iconos\\buscar.png")); // NOI18N
+        buscar2.setContentAreaFilled(false);
+        buscar2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buscar2ActionPerformed(evt);
+            }
+        });
+
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhoselin\\Downloads\\ProyectoArboles(2) (2)\\ProyectoArboles(2)\\src\\iconos\\insertar.png")); // NOI18N
+        jButton1.setContentAreaFilled(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhoselin\\Downloads\\ProyectoArboles(2) (2)\\ProyectoArboles(2)\\src\\iconos\\trash_26px.png")); // NOI18N
+        jButton2.setContentAreaFilled(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jhoselin\\Downloads\\ProyectoArboles(2) (2)\\ProyectoArboles(2)\\src\\iconos\\cargar.png")); // NOI18N
+        jButton3.setContentAreaFilled(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3))
+                        .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(significado, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(73, 73, 73)
-                                .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE)))))
-                .addContainerGap(23, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(122, 122, 122)
-                .addComponent(jLabel1)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(buscar2))
+                                    .addComponent(significado, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(122, 122, 122)
+                        .addComponent(jLabel1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton2))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton3)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addGap(31, 31, 31)
                 .addComponent(jLabel1)
                 .addGap(26, 26, 26)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(jLabel2)
+                    .addComponent(buscar2))
                 .addGap(40, 40, 40)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(significado, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(52, 52, 52))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(67, 67, 67))))
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(67, 67, 67))
         );
 
         jMenuBar1.add(jMenu6);
-
-        jMenu2.setText("Métodos");
-
-        Insertar.setText("Insertar");
-        Insertar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                InsertarActionPerformed(evt);
-            }
-        });
-        jMenu2.add(Insertar);
-
-        Eliminar.setText("Eliminar");
-        Eliminar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EliminarActionPerformed(evt);
-            }
-        });
-        jMenu2.add(Eliminar);
-
-        Buscar.setText("Buscar");
-        Buscar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BuscarActionPerformed(evt);
-            }
-        });
-        jMenu2.add(Buscar);
-
-        Cargar.setText("Cargar");
-        Cargar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CargarActionPerformed(evt);
-            }
-        });
-        jMenu2.add(Cargar);
-
-        jMenuBar1.add(jMenu2);
 
         jMenu3.setText("Recorridos");
         jMenu3.addActionListener(new java.awt.event.ActionListener() {
@@ -219,7 +226,7 @@ public class ÁrbolBB extends javax.swing.JFrame {
             }
         });
 
-        InOrden.setText("Recorrido InOrden");
+        InOrden.setText("Orden Alfabético(Recorrido InOrden)");
         InOrden.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 InOrdenActionPerformed(evt);
@@ -280,24 +287,42 @@ public class ÁrbolBB extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_nombreActionPerformed
 
-    private void InsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InsertarActionPerformed
+    private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
         // TODO add your handling code here:
-        arbol.insertar(nombre.getText(), significado.getText());
-    }//GEN-LAST:event_InsertarActionPerformed
+     
+    }//GEN-LAST:event_jMenu3ActionPerformed
 
-    private void EliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarActionPerformed
+    private void InOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InOrdenActionPerformed
         // TODO add your handling code here:
-        String valor  = arbol.eliminar(nombre.getText());
-    }//GEN-LAST:event_EliminarActionPerformed
+   
+      this.recorridos.setText("" + arbol.recorridoEnInOrden() + "");
+    }//GEN-LAST:event_InOrdenActionPerformed
 
-    private void BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarActionPerformed
+    private void PreOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PreOrdenActionPerformed
         // TODO add your handling code here:
-     significado.setText( arbol.buscar(nombre.getText()) );
-    }//GEN-LAST:event_BuscarActionPerformed
+        
+      this.recorridos.setText("" + arbol.recorridoEnPreOrden() + "");
+    }//GEN-LAST:event_PreOrdenActionPerformed
 
-    private void CargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CargarActionPerformed
+    private void PostOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PostOrdenActionPerformed
         // TODO add your handling code here:
-        arbol.insertar("Gabriel", "El que tiene la fuerza de Dios");
+        this.recorridos.setText("" + arbol.recorridoEnPostOrden() + "");
+    }//GEN-LAST:event_PostOrdenActionPerformed
+
+    private void nivelesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivelesActionPerformed
+        // TODO add your handling code here:
+        recorridos.setText("" +arbol.recorridoPorNiveles() + "");
+    }//GEN-LAST:event_nivelesActionPerformed
+
+    private void buscar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buscar2ActionPerformed
+        // TODO add your handling code here:
+         significado.setText( arbol.buscar(nombre.getText()) );
+        
+    }//GEN-LAST:event_buscar2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+                arbol.insertar("Gabriel", "El que tiene la fuerza de Dios");
         arbol.insertar("Eloy","El elegido");
         arbol.insertar("Esteban","Victorioso");
         arbol.insertar("Alina","Amiga noble");
@@ -325,36 +350,17 @@ public class ÁrbolBB extends javax.swing.JFrame {
         arbol.insertar("Eva","La que da vida");
         arbol.insertar("Emanuel","Dios con nosotros");
        
-        
-    
-    }//GEN-LAST:event_CargarActionPerformed
+    }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-     
-    }//GEN-LAST:event_jMenu3ActionPerformed
+        arbol.insertar(nombre.getText(), significado.getText());
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void InOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InOrdenActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-   
-      this.recorridos.setText("" + arbol.recorridoEnInOrden() + "");
-    }//GEN-LAST:event_InOrdenActionPerformed
-
-    private void PreOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PreOrdenActionPerformed
-        // TODO add your handling code here:
-        
-      this.recorridos.setText("" + arbol.recorridoEnPreOrden() + "");
-    }//GEN-LAST:event_PreOrdenActionPerformed
-
-    private void PostOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PostOrdenActionPerformed
-        // TODO add your handling code here:
-        this.recorridos.setText("" + arbol.recorridoEnPostOrden() + "");
-    }//GEN-LAST:event_PostOrdenActionPerformed
-
-    private void nivelesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nivelesActionPerformed
-        // TODO add your handling code here:
-        recorridos.setText("" +arbol.recorridoPorNiveles() + "");
-    }//GEN-LAST:event_nivelesActionPerformed
+        String valor = arbol.eliminar(nombre.getText());
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -392,13 +398,13 @@ public class ÁrbolBB extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem Buscar;
-    private javax.swing.JMenuItem Cargar;
-    private javax.swing.JMenuItem Eliminar;
     private javax.swing.JMenuItem InOrden;
-    private javax.swing.JMenuItem Insertar;
     private javax.swing.JMenuItem PostOrden;
     private javax.swing.JMenuItem PreOrden;
+    private javax.swing.JButton buscar2;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
@@ -406,7 +412,6 @@ public class ÁrbolBB extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
